@@ -1,0 +1,180 @@
+
+*{
+ margin: 0;
+ padding: 0;
+ font-family: "Hanken Grotesk";
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    height: 23rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 6px 6px 30px #eceef0;
+    border-radius: 30px;
+    /* border: 1px solid black; */
+    /* flex-flow: column wrap; */
+    /* position: relative; */
+    /* overflow:hidden */
+}
+
+h1,h2,h3,h4,h6,p{
+    padding:0;
+    margin: 0;
+}
+
+span{
+    display: flex;
+}
+
+p{
+    font-size: 12px;
+    width: 170px;
+    margin: 0 auto;
+}
+
+img{
+    margin-right: 10px;
+
+}
+
+.left{
+    background-color: hsl(241, 81%, 60%);
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.7);
+    /* padding: 45px 0; */
+    border-radius: 30px;
+    width: 250px;
+    height: inherit;
+    align-content: center;
+}
+
+.score{
+    background-image:linear-gradient(hsla(256, 72%, 46%, 1),hsl(241, 81%, 60%) );
+    border-radius: 50%;
+    width: 8.8em;
+    height: 8.8em;
+    margin:15px auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.score h1{
+    color: white;
+}
+
+.rating{
+    color: white;
+}
+
+.description{
+    width: 230px;
+    margin: 10px auto 0;
+}
+
+.right{
+    padding: 0 30px;
+    width: 200px;
+}
+
+.category{
+    margin: 10px 0;
+    position: relative;
+}
+
+.category div{
+    border:none;
+    border-radius: 5px;
+    margin: 15px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+
+}
+.category .reaction{
+    background-color:hsla(0, 100%, 67%, 0.06);
+}
+.category .reaction .name{
+    color: hsl(0, 100%, 67%);
+    font-weight: 800;
+}
+.category .memory{
+    background-color: hsla(39, 100%, 56%, 0.06);
+}
+.category .memory .name{
+    color:hsla(39, 100%, 56%);
+    font-weight: 800;
+}
+.category .verbal{
+    background-color: hsla(166, 100%, 37%, 0.06);
+}
+.category .verbal .name{
+    color: hsla(166, 100%, 37%);
+    font-weight: 800;
+}
+.category .visual{
+    background-color: hsla(234, 85%, 45%,0.06);
+}
+.category .visual .name{
+    color: hsla(234, 85%, 45%);
+    font-weight: 800;
+}
+
+.name{
+    text-align: left;
+}
+.rate{
+    text-align: right;
+    color: gray;
+    font-weight: 800;
+}
+
+.rate span{
+    padding-right: 5px;
+    color: black;
+}
+
+button{
+    background-color:hsl(224, 30%, 27%);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    padding: 11px 0;
+    width:100%;
+    margin-top: 15px;
+}
+
+button:hover{
+    background-color: hsl(241, 81%, 60%);
+}
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    main{
+    flex-flow: column nowrap;
+    height: initial;
+    }
+    p{
+        width:200px;
+    }
+    .left{
+        padding: 20px 0;
+    }
+    .right{
+        margin: 20px 0;
+    }
+
+  }
